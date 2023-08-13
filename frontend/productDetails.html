@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2c8edd320f.js" crossorigin="anonymous"></script>
+
+    <style>
+        .product-img-cont img
+        {
+          width: 400px;
+          height: auto;
+        }
+        .img-container img {
+          margin-top: 10px;
+          max-width: 200px;
+          max-height: 300px;
+        }
+        .img-container{
+          height: 300px;
+          width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-dark bg-secondary ">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">ShopNow</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active text-light" aria-current="page" href="home.html">Home</a>
+                  <a class="nav-link text-light" href="#">Categories</a>
+                  <a class="nav-link text-light" href="#">Bag</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+      </section>
+
+      <section id="product">
+        <div class="container product">
+            <div class="row m-5 ">
+                <div class="col-md-6 themed-grid-col p-3" id="product-img">
+                  <div class="product-img-cont" id="product-img-cont"></div>
+                </div>
+                <div class="col-md-6 themed-grid-col p-3" id="product-info"></div>
+            </div>
+        </div>
+      </section>
+
+      <section id="simProducts">
+        <div class="container overflow-hidden">
+          <h2><br>Similar Products </h2>
+            <div class="row my-5 mx-auto text-center gx-5" id="cards-container">
+              
+                
+            </div>
+        </div>
+      </section>
+
+
+      <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          <a class="text-dark" href="https://mdbootstrap.com/">contact us</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <script src="product.js"></script>
+    
+</body>
+</html>

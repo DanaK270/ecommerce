@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2c8edd320f.js" crossorigin="anonymous"></script>
+        
+        <style>
+
+          .carousel-image-container img{
+            max-height: 500px;
+            width: auto;
+          }
+          .img-container img {
+            margin-top: 10px;
+            max-width: 200px;
+            max-height: 300px;
+          }
+          .img-container{
+            height: 300px;
+            width: 300px;
+          }
+          .carousel-image-container {
+            position: relative;
+            display: block;
+          }
+          
+          .carousel-image-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (0.5) for the desired darkness */
+            z-index: 1;
+          }
+
+          .carousel-caption{
+            z-index: 1;
+          }
+          
+
+         
+        </style>
+
+    </head>
+
+    <body>
+          <section id="navbar">
+            <nav class="navbar navbar-expand-lg bg-body-dark bg-secondary ">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-light" href="#">ShopNow</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active text-light" aria-current="page" href="home.html">Home</a>
+                      <a class="nav-link text-light" href="#">Categories</a>
+                      <a class="nav-link text-light" href="#">Bag</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+          </section>
+
+          <section id="crsl">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner " id="carousel-inner">
+               
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+
+
+          <section id="products">
+            <div class="container overflow-hidden">
+              <h2><br>Popular Products </h2>
+                <div class="row my-5 mx-auto text-center gx-5" id="cards-container">
+                  
+                    
+                </div>
+            </div>
+          </section>
+
+          <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              <a class="text-dark" href="https://mdbootstrap.com/">contact us</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
