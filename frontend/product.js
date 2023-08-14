@@ -51,7 +51,6 @@ fetch(`http://localhost:5000/products/category/${productId}`)
     
     let productInfo=
     `<h2>${product.name}</h2><br>
-    <h5>Product ID: ${product.id}</h5>
     <h5> Price: $${product.price}</h5>
     ${starsHTML}<br><br>
     <p>${product.description}</p>`;
